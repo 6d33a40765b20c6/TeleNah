@@ -1,9 +1,11 @@
 {
-    
-    "text": "",
-    "report": "",
-    "PatchFileAccounts": "",
-    "edit_data": false,
-    "join_channels": ""
+    "API_ID": 1234567,
+    "API_HASH": "qwertyuiopasdfghjklzxcvbnmqwertyu",
+    "PatchFileText": "text.txt",
+    "PatchFileAccounts": "account.txt",
+    "PatchFileChannels": "channels.txt",
+    "link_preview": false,
+    "token_bot": "1234567890:qwertyuiopQWERTYUIOP",
+    "user_id": 1234567890
 
 }
