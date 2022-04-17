@@ -8,7 +8,7 @@
 > config.json
 > - "API_ID": как получить: https://core.telegram.org/api/obtaining_api_id (любого аккканта)
 > - "API_HASH": как получить: https://core.telegram.org/api/obtaining_api_id (любого аккканта)
-> - "PatchFileText": "имя_файла.txt"  - файл с текстами (1-строчка: 1 текст; 2-строчка: 2 текст и так далее) Форматирование !Markdown! (для переноса строки: "[n]" ): https://core.telegram.org/bots/api#markdownv2-style
+> - "PatchFileText": "имя_файла.txt"  - файл с текстами (1-строчка: 1 текст; 2-строчка: 2 текст и так далее) Форматирование !Markdown! (для переноса строки: "[n]" ): https://core.telegram.org/api/entities
 > - "PatchFileAccounts": "имя_файла.txt" - файл с номерами аккаунтов теллеграм, на которые нужно заходить
 > - "PatchFileChannels": "имя_файла.txt" - файл с данными каналов (Паблик: @usermame; Приват: https://t.me/+QWERTYUIO либо t.me/+QWERTYUIO)
 > - "link_preview": false - предпросмотор ссылок (true/false)

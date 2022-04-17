@@ -65,7 +65,7 @@ class TeleNah():
     def config_read(self):
         print('[yellow]Read config.json...[/yellow]')
         try:
-            with open('config.json','r') as file:
+            with open('config.json','r',encoding='utf8',errors='ignore') as file:
                     cfg = loads(file.read())
             self.API_ID = cfg['API_ID']
             self.API_HASH = cfg['API_HASH']
@@ -77,13 +77,13 @@ class TeleNah():
                 self.token_bot = False
                 self.user_id = False
             try:
-                with open(cfg['PatchFileText'],'r') as file:
+                with open(cfg['PatchFileText'],'r',encoding='utf8',errors='ignore') as file:
                     for text in file.readlines():
                         self.text.append(text)
             except:
                 raise Exception('File with "PatchFileText" not found.')
             try:
-                with open(cfg['PatchFileAccounts'],'r') as file:
+                with open(cfg['PatchFileAccounts'],'r',encoding='utf8',errors='ignore') as file:
                     for _ in file.readlines():
                         phone = utils.parse_phone(_)
                         if phone:
@@ -94,7 +94,7 @@ class TeleNah():
                 raise Exception('File with "PatchFileAccounts" not found.')
             try:
                 if cfg['PatchFileChannels']:
-                    with open(cfg['PatchFileChannels'],'r') as file:
+                    with open(cfg['PatchFileChannels'],'r',encoding='utf8',errors='ignore') as file:
                         for channel in file.readlines():
                             self.channels.append(channel.replace('\n',''))
             except:
